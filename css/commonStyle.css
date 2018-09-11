@@ -1,0 +1,280 @@
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+/* Common Styles, for all pages. */
+
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End CSS Reset */
+
+/* Font properties */
+
+
+body p {
+    font-family:'Oxygen', sans-serif; padding:5px; text-align:center; margin:15px; line-height:1.3em; margin-left:15em; margin-right:15em;
+}
+a {
+    font-family:'Raleway', sans-serif; color:black;
+}
+h1 { 
+font-family:'Oxygen', sans-serif; text-align:center; font-size:36px; padding:10px;
+}
+
+a:link {
+    text-decoration:none;
+}
+a:hover, a:focus {
+    font-weight:bold; text-transform:uppercase;
+}
+
+/* Header properties */
+
+
+header {
+    height:6em; width:100%; background-color:aquamarine; 
+}
+header h2 {
+    font-family:'Acme', cursive; margin: 15px; padding:5px; font-size:30px; float:left;
+}
+
+#contact {
+    position:relative; float:right; z-index:1; right:8%; margin-top:25px; font-weight:bold; background-color:aliceblue; padding:10px; font-size:1.2em; 
+}
+
+/* Navbar Properties */
+
+
+#traditionalArt {
+    background-image:url("../images/traditionalArt/mulePreview.jpg"); width:17%; height:6em; display:block; float:left; background-size:100%; background-repeat:no-repeat;
+}
+#digitalArt {
+        background-image:url("../images/digitalArt/fourirPreview.jpg"); width:17%; height:6em; display:block; float:left; background-size:100%; background-repeat:no-repeat;
+}
+#commissions {
+        background-image:url("../images/commissionPreview.jpg"); width:17%; height:6em; display:block; float:left; background-size:100%; background-repeat:no-repeat;
+}
+#design {
+    background-image:url("../images/designPreview.jpg"); width:17%; height:6em; display:block; float:left; background-size:100%; background-repeat:no-repeat;
+}
+#sketchbook {
+    background-image:url("../images/sketchbook/jaguarPreview.jpg"); width:16%; height:6em; display:block; float:left; background-size:100%; background-repeat:no-repeat;
+}
+#about {
+    background-image:url("../images/sampleImage.jpg"); width:16%; height:6em; display:block; float:left; background-size:100%; background-repeat:no-repeat;
+}
+.name {
+    display:inline; border; border-style:groove; background-color:azure; margin:15px; padding:5px; width:5em; 
+}
+nav {
+    height:6em; width:100%;
+}
+/* Body Properties */
+body {
+background: aliceblue;
+background: -webkit-linear-gradient(left, #C3EDEE, #408DBC)
+}
+
+/* Footer properties */
+
+footer {
+    clear:both; height:5em; width:100%; background-color:gainsboro;
+}
+footer p {
+    padding:15px;
+}
+
+/* Thumbnail properties */
+
+.wideImage {
+    width:60%; height:auto; margin: 15px auto; display:block;
+}
+.tallImage {
+    width:38%; height:auto; margin:15px auto; display:block;
+}
+    
+    .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 24%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
+.container {
+    position: relative;
+   /* width: 20%; 
+    /* float:left; */
+   /* margin:10px; */
+    background-color:aquamarine;
+    padding:10px;
+    display:block;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover,.container:focus .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: aquamarine;
+  color: black;
+  font-size: 14px;
+  padding: 10px 14px;
+    font-family:'Raleway', sans-serif;
+}
+
+/* Scrolling Gallery properties */
+.galleryContainer {
+    padding:15px; background-color:aquamarine; margin:auto; width:50%; display:block; max-height:2200px;
+}
+.slides {
+    width:100%; display:block; margin:auto;
+}
+/* Automatic Gallery Properties */
+.autoSlides {
+    display:none; width:100%;
+}
+.autoGallery {
+    max-width:500px;
+}
+
+/* Accessibility */
+
+/* For desktop */
+@media only screen and (max-width:1055px) {
+/* This fixes the issue with the tiles rearranging to one row of 3. It puts them neatly in a 2x2 grid. */
+    .container {
+        min-width:33%; max-width:40%; margin-left:6%; margin-right:6%; margin-top:3%; margin-bottom:3%; 
+    }
+
+    h1 {
+        font-size:36px;
+    }
+      .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+    #traditionalArt {
+    background-image:url("../images/traditionalArt/mulePreview.jpg"); width:10em; height:6em; display:block; float:left; margin:1px;
+}
+#digitalArt {
+        width:10em; height:6em; display:block; float:left; margin:1px;
+}
+#commissions {
+        width:10em; height:6em; display:block; float:left; margin:1px;
+}
+#sketchbook {
+    width:10em; height:6em; display:block; float:left; margin:1px;
+}
+    #design {
+        width:10em; height:6em; display:block; float:left; margin:1px;
+    }
+#about {
+    background-image:url("../images/sampleImage.jpg"); width:10em; height:6em; display:block; float:left; margin:1px;
+}
+ /* assign this to thumbnails that misbehave when the window is ensmallened */
+    .newClears {
+        clear:both;
+    }
+@media only screen and (max-width:600px) {
+    .container {
+        min-width:37%; max-width:45%; margin:3%;
+    }
+
+    h1 {
+        font-size:24px;
+    }
+      .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+/* For mobile */ 
+    
+    
