@@ -1,0 +1,66 @@
+<!doctype HTML>
+<html>
+<head>
+    <link href="css/commonStyle.css" rel="stylesheet" type="text/css">
+    <title>Art by Caitlin</title>
+    <header><a href="index.html"><h2>Art By Caitlin</h2></a><h3 id="contact"><a href="mailto:omearacd@miamioh.edu" target="_top">Contact</a></h3> 
+        <p style="clear:both;"></p>
+
+        <nav>
+            <ul>
+                <li><a href="pages/traditionalArt.html"><div id="traditionalArt"><div class="name">Traditional Art</div></div></a></li>
+                
+                <li><a href="pages/digitalArt.html"><div id="digitalArt"><div class="name">Digital Art</div></div></a></li>
+                
+                <li><a href="pages/sketchbook.html"><div id="sketchbook"><div class="name">Sketchbook</div></div></a></li>
+                
+                 <li><a href="pages/design.html"><div id="design"><div class="name">Design</div></div></a></li>
+                
+                <li><a href="pages/commissions.html"><div id="commissions"><div class="name">Commissions</div></div></a></li>
+                
+                <li><a href="pages/about.html"><div id="about"><div class="name">About</div></div></a></li>
+            </ul>
+        </nav>
+    </header>
+    <p style="clear:both;"></p>
+</head>
+<body>
+    <h1>Art By Caitlin O'Meara</h1>
+    <P>Illustration and Design</P>
+
+    
+<!-- Scrolling Gallery -->
+    <div class="galleryContainer">
+<div class="gallery-preview">
+    <img class="slides" src="images/traditionalArt/selfPortrait.jpg">
+     <img class="slides" src="images/digitalArt/fourir.jpg">
+     <img class="slides" src="images/traditionalArt/piasaBird.jpg">
+    
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+    </div>
+    <script language="javascript">
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+<footer>
+    <p>Art By Caitlin, 2017.</p>
+</footer>
+</html>
